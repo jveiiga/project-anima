@@ -509,6 +509,8 @@ figure {
   display: none;
 }
 
+/************ CONTAINER ADJUSTE FOOTER ***********/
+
 .container_adjuste_color_footer {
   height: 1246px;
   margin-top: -1242px;
@@ -711,6 +713,8 @@ figure {
   body {
     background-image: url("image/bg_desktop.png");
   }
+
+
 
   .container_total {
     max-width: 1224px;
