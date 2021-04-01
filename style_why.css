@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Wendy One";
-  background: #f7cfda;
-  background-image: url("image/bg_mobile.png");
+  background: #f7cdbf;
+  background-image: url("image/bg_mobile_why.png");
 }
 
 a {
@@ -26,7 +26,7 @@ figure {
   position: fixed;
   width: 100%;
   z-index: 3;
-  background: #f7cfda;
+  background: #fae0cf;
 }
 
 .header ul {
@@ -176,7 +176,7 @@ figure {
 .container_total {
   max-width: 337px;
   margin: 0 auto;
-  padding-top: 128px;
+  padding-top: 100px;
 }
 
 /*********** CONTAINER TITLE *********/
@@ -196,6 +196,11 @@ figure {
   color: #642c99;
 }
 
+.container_button_shop_now {
+  display: flex;
+  justify-content: center;
+}
+
 .button-shop-now {
   margin-top: 46px;
   width: 206px;
@@ -209,9 +214,20 @@ figure {
   text-align: center;
   text-transform: uppercase;
   color: #fbfac9;
+  cursor: pointer;
 }
 
 .container_image_main_content {
+  display: block;
+  margin-top: 50px;
+}
+
+.container_imagetwo_main_content {
+  display: none;
+}
+
+.image_main_content_desktop {
+  display: none;
 }
 
 .image_main_content_375 {
@@ -226,206 +242,121 @@ figure {
   display: none;
 }
 
-/*********** CONTAINER SUBTITLE *********/
-
-.container_total_subtitle_content {
-  margin-top: 142px;
-}
-
-.container_subtitle_content {
-}
-
-.container_title_subtitle {
-  margin-top: 86px;
-  font-size: 53px;
-  line-height: 65px;
-  color: #642c99;
-}
-
-.container_text_subtitle {
-  margin-top: 43px;
-  font-family: Lato;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: justify;
-  color: #642c99;
-}
-
-.button_why_miss_cupcake {
-  margin-top: 41px;
-  width: 206px;
-  height: 43px;
-  background: #642c99;
-  border-radius: 8px;
-  border: none;
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fbfac9;
-}
-
-.container-image-subtitle {
+.container_total_image_subtitle {
   display: flex;
   justify-content: center;
 }
 
-.image_subtitle_375 {
-  margin-top: 68px;
-}
-
-.image_subtitle_960 {
-  display: none;
-}
-
-.image_subtitle_1440 {
-  display: none;
-}
-
-/****** CONTAINER TEXT LITLE SWEET ******/
-
-.container_text_litle_sweet {
-  margin-top: 133px;
-  font-size: 52px;
-  line-height: 65px;
-  color: #642c99;
-  width: 400px;
-}
-
-/****** CONTAINER CAKE SHOPPING ******/
-
-.container_total_cake_shopping {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.container_cake_shopping {
+.container_image_subtitle_mobile {
   display: flex;
   justify-content: center;
+}
+
+.container_image_subtitle_tablet {
+  display: none;
+}
+
+.container_total_information > div {
+  margin: 49px 0 0 0;
+}
+
+.container_information_one {
+  display: flex;
   flex-direction: column;
-  margin-top: 133px;
-  width: 336px;
-}
-
-.container_adjuste_image_cake_shopping {
-  display: flex;
-  justify-content: center;
-}
-
-.container_text_cake_shopping {
-  margin-top: 53px;
-  font-size: 32px;
-  line-height: 34px;
-  text-align: center;
-  color: #642c99;
-}
-
-.container_text_description_cake {
-  margin-top: 45px;
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #642c99;
-}
-
-.container_total_select-button {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 35px;
-}
-
-.container_select {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 100px;
-  height: 43px;
-  border: 2px solid #642c99;
-  box-sizing: border-box;
-  border-radius: 8px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.container_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 206px;
-  height: 43px;
-  background: #642c99;
-  border-radius: 8px;
   font-family: Lato;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
-  color: #fbfac9;
-  cursor: pointer;
-}
-
-/****** CONTAINER OUR STORY ******/
-
-.container_total_our_story {
-  margin-top: 229px;
-  border-radius: 15px;
-}
-
-.container_total_text_our_story {
-}
-
-.container_title_our_story {
-  font-size: 52px;
-  line-height: 65px;
   color: #642c99;
 }
 
-.container_text_our_story {
-  margin-top: 45px;
+.container_information_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #642c99;
+}
+
+.container_information_three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #642c99;
+  margin: 49px 0 0 0;
+}
+
+.container_text_information {
+  margin: 29px 0 0 0;
+}
+
+.container_total_information_tablet {
+  display: none;
+}
+
+.container_title_message_shop {
+  font-size: 60px;
+  line-height: 63px;
+  color: #642c99;
+  margin: 110px 0 0 0;
+}
+
+.container_text_message_shop {
   font-family: Lato;
   font-size: 18px;
   line-height: 26px;
-  text-align: justify;
   color: #642c99;
+  margin: 81px 0 0 0;
 }
 
-.container_button_our_story {
+.container_button_message_shop {
   width: 206px;
   height: 43px;
   background: #642c99;
-  border: 1px solid #fdefd1;
   border-radius: 8px;
   font-family: Lato;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  text-transform: uppercase;
   color: #fbfac9;
-  margin-top: 44px;
+  text-transform: uppercase;
+  margin: 37px 0 0 0;
   cursor: pointer;
 }
 
-.container_image_our_story {
-  margin-top: 74px;
+.container_unicorn_mobile {
+  position: absolute;
+  margin: 34px 0 0 235px;
 }
 
-.image_our_story_960 {
+.container_cake_mobile {
+  position: absolute;
+  margin: -30px 0 0 120px;
+}
+
+.container_unicorn_desktop {
   display: none;
 }
 
-.image_our_story_1440 {
+.container_cake_desktop {
   display: none;
 }
 
 /****** CONTAINER FOOTER ******/
 
 .container_total_footer {
+  margin: 212px 0 0 0;
 }
 
 .container_title_footer {
@@ -512,8 +443,8 @@ figure {
 /************ CONTAINER ADJUSTE FOOTER ***********/
 
 .container_adjuste_color_footer {
-  height: 1246px;
-  margin-top: -1242px;
+  height: 58px;
+  margin-top: -54px;
   background-color: rgb(93 51 148);
 }
 
@@ -521,7 +452,7 @@ figure {
 
 @media only screen and (min-width: 960px) {
   body {
-    background-image: url("image/bg_tablet.png");
+    background-image: url("image/bg_why_tablet.png");
   }
 
   .header li {
@@ -555,129 +486,137 @@ figure {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #f7cfda;
+    background-color: #fae0cf;
   }
 
   .container_total {
-    max-width: 828px;
+    max-width: 882px;
     margin: 0 auto;
-    padding-top: 235px;
+    padding-top: 224px;
   }
 
-  .container_total_main_content {
+  .container_main_content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_imagetwo_main_content {
+    display: flex;
+    justify-content: space-between;
+    margin: -100px 0 0 0;
   }
 
   .container_title_main_content {
     font-size: 100px;
     line-height: 105px;
-    color: #642c99;
+    width: 770px;
+    text-align: center;
   }
 
-  .image_main_content_375 {
-    display: none;
-  }
-
-  .image_main_content_960 {
-    display: block;
-  }
-
-  .image_main_content_1440 {
-    display: none;
+  .container_caption_main_content {
+    width: 500px;
   }
 
   .container_image_main_content {
-    margin-top: -172px;
+    display: none;
   }
 
-  .container_total_subtitle_content {
+  .image_main_content_desktop {
+    display: none;
+  }
+
+  .container_total_image_subtitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_image_subtitle_mobile {
+    display: none;
+  }
+
+  .container_image_subtitle_tablet {
+    display: block;
+  }
+
+  .container_total_information_tablet {
+    display: flex;
+  }
+
+  .container_invert_information {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .image_subtitle_375 {
+  .container_total_information > div {
     display: none;
   }
-  .image_subtitle_960 {
-    display: block;
+
+  .container_information_one {
+    align-items: flex-start;
+    text-align: initial;
+    margin: -240px 0 0 0;
   }
 
-  .container_title_subtitle {
-    font-size: 70px;
-    color: #642c99;
+  .container_information_two {
+    align-items: flex-start;
+    text-align: initial;
+    margin: -126px 0 0 -64px;
   }
 
-  .container-image-subtitle {
+  .container_information_three {
+    align-items: flex-start;
+    text-align: initial;
+    margin: 70px 0 0 -170px;
+  }
+
+  .container_total_message_shop {
     display: flex;
-    justify-content: center;
-    margin-right: 59px;
-  }
-
-  .container_text_litle_sweet {
-    margin-top: 343px;
-  }
-
-  .container_total_cake_shopping {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 15px;
-  }
-
-  .container_cake_shopping {
-    display: flex;
-    justify-content: inherit;
     flex-direction: column;
-    margin-top: 133px;
-    width: 336px;
+    align-items: center;
   }
 
-  section.container_cake_shopping img {
-    max-height: 192px;
+  .container_title_message_shop {
+    text-align: center;
+    font-size: 100px;
+    line-height: 105px;
+    margin: 199px 0 0 0;
   }
 
-  .container_title_our_story {
-    font-size: 52px;
-    line-height: 65px;
-    color: #642c99;
-    width: 300px;
+  .container_unicorn_mobile {
+    position: absolute;
+    margin: -24px 0 0 152px;
   }
 
-  .container_text_our_story {
-    width: 500px;
-    margin-top: 45px;
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: justify;
-    color: #642c99;
+  .container_cake_mobile {
+    position: absolute;
+    margin: -46px 0 0 -172px;
   }
 
-  .container_total_our_story {
-    display: flex;
-    margin-top: 229px;
-    border-radius: 15px;
-  }
-
-  .container_image_our_story {
-    margin-top: 218px;
-  }
-
-  .image_our_story_375 {
+  .container_unicorn_desktop {
     display: none;
   }
 
-  .image_our_story_960 {
-    display: block;
-  }
-  .image_our_story_1440 {
+  .container_cake_desktop {
     display: none;
+  }
+
+  .container_text_message_shop {
+    text-align: center;
+    width: 600px;
+  }
+
+  .container_total_footer {
+    margin: 354px 0 0 0;
   }
 
   .container_total_title_footer {
     display: flex;
     justify-content: space-between;
+  }
+
+  .container-inbox {
+    margin: 59px 60px 0 0;
   }
 
   .container_input {
@@ -702,7 +641,7 @@ figure {
   }
 
   .container_adjuste_color_footer {
-    height: 800px;
+    height: 700px;
     margin-top: -670px;
   }
 }
@@ -711,114 +650,87 @@ figure {
 
 @media only screen and (min-width: 1440px) {
   body {
-    background-image: url("image/bg_desktop.png");
+    background-image: url("image/bg_why_desktop.png");
   }
 
   .container_total {
-    max-width: 1224px;
+    max-width: 1227px;
     margin: 0 auto;
   }
 
   .container_title_main_content {
     font-size: 120px;
-    line-height: 127px;
-    width: 600px;
+    width: 850px;
   }
 
   .container_caption_main_content {
-    width: 600px;
+    width: 400px;
+    text-align: center;
   }
 
-  .image_main_content_960 {
+  .container_imagetwo_main_content {
     display: none;
   }
 
-  .image_main_content_1440 {
-    display: block;
-    margin-top: 14px;
-  }
-
-  .container_total_subtitle_content {
+  .image_main_content_desktop {
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: 144px;
+    justify-content: space-between;
+    margin: -142px 0 0 0;
   }
 
-  .image_subtitle_960 {
-    display: none;
+  .container_image_detail_twocake {
+    width: 164px;
+    height: 232px;
+    background-image: url("image/image_detail_twocake_why_desktop.png");
+    background-repeat: no-repeat;
+    margin: 0 0 0 800px;
   }
 
-  .image_subtitle_1440 {
-    display: block;
+  .container_image_twocake {
+    position: absolute;
+    margin: 100px 0 0 1070px;
   }
 
-  .container-image-subtitle {
-    margin-right: 140px;
-  }
-
-  .container_title_subtitle {
-    font-size: 90px;
-    width: 680px;
-  }
-
-  .container_text_subtitle {
-    width: 600px;
-  }
-
-  .container_text_litle_sweet {
-    margin-top: 456px;
-    font-size: 90px;
-    line-height: 95px;
-    width: 700px;
-  }
-
-  .container_total_cake_shopping {
-    display: flex;
-    justify-content: end;
+  .container_invert_information {
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 100px 15px;
   }
 
-  .container_cake_shopping {
-    justify-content: flex-end;
-    flex-direction: column;
-    margin-top: 135px;
-    margin: 30px;
+  .container_information_two {
+    margin: 56px 0 0 0px;
   }
 
-  .container_total_our_story {
-    margin-top: 479px;
+  .container_information_three {
+    margin: -174px 30px 0 0;
   }
 
-  .container_title_our_story {
+  .container_text_information {
+    width: 400px;
+  }
+
+  .container_title_message_shop {
     font-size: 120px;
-    line-height: 65px;
-    width: 500px;
+    line-height: 127px;
   }
 
-  .container_text_our_story {
-    margin-top: 67px;
-  }
-
-  .image_our_story_375 {
+  .container_unicorn_mobile {
     display: none;
   }
 
-  .image_our_story_960 {
+  .container_cake_mobile {
     display: none;
   }
 
-  .image_our_story_1440 {
-    display: block;
+  .container_unicorn_desktop {
+    position: absolute;
+    margin: -24px 0 0 152px;
   }
 
-  .container_image_our_story {
-    margin: 0 0 0 128px;
+  .container_cake_desktop {
+    position: absolute;
+    margin: -46px 0 0 -172px;
   }
 
   .container_total_footer {
-    margin-top: 172px;
   }
 
   .container_total_links {
@@ -827,6 +739,10 @@ figure {
 
   .container_links_useful {
     display: none;
+  }
+
+  .container_links_from_page {
+    margin: 0 310px 0 0;
   }
 
   .container_total_links {
@@ -851,5 +767,10 @@ figure {
     color: #fdefd1;
     margin: 0 60px;
     text-decoration: none;
+  }
+
+  .container_adjuste_color_footer {
+    height: 100px;
+    margin-top: -10px;
   }
 }
