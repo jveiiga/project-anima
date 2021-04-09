@@ -8,6 +8,7 @@ body {
 
 a {
   color: #642c99;
+  text-decoration: none;
 }
 
 p {
@@ -26,7 +27,6 @@ figure {
   position: fixed;
   width: 100%;
   z-index: 3;
-  background: #fae0cf;
 }
 
 .header ul {
@@ -34,7 +34,7 @@ figure {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fcefd2;
+  background-color: transparent;
 }
 
 .header li a {
@@ -67,7 +67,6 @@ figure {
   display: inline-block;
   float: left;
   padding: 21px 18px;
-  position: relative;
   user-select: none;
 }
 
@@ -154,6 +153,10 @@ figure {
   text-decoration: none;
 }
 
+.header .logo:before {
+  display: none;
+}
+
 .number_list_shopping_car {
   display: flex;
   justify-content: center;
@@ -165,10 +168,6 @@ figure {
   font-size: 10px;
   text-align: center;
   background-color: #fcefd2;
-}
-
-.header .logo:before {
-  display: none;
 }
 
 /*************** CONTAINER TOTAL ****************/
@@ -325,18 +324,24 @@ figure {
 }
 
 .container_button_message_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 206px;
   height: 43px;
   background: #642c99;
   border-radius: 8px;
+  border: none;
   font-family: Lato;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  color: #fbfac9;
   text-transform: uppercase;
   margin: 37px 0 0 0;
   cursor: pointer;
+}
+
+a.container_button_message_shop {
+  color: #fbfac9;
 }
 
 .container_unicorn_mobile {
@@ -490,7 +495,7 @@ figure {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fae0cf;
+    background-color: transparent;
   }
 
   .container_total {

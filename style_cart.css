@@ -1,0 +1,140 @@
+/************ SHOPPING CART ************/
+
+
+.container_shopping_cart {
+    float: right;
+    width: 484px;
+    height: 729px;
+    background-image: url("image/background_shopping_cart.png");
+    background-repeat: no-repeat;
+    margin: 52px 0 0 0;
+    padding: 23px 0 0 0;
+    
+    transition: 1s;
+    z-index: 42;
+  }
+  
+:hover .logo {
+    transform: translateY(0) scaleY(1);  
+  }
+  
+  .container_total_cart {
+    max-width: 409px;
+    margin: 0 auto;
+  }
+  
+  .container_total_title_shopping_cart {
+    display: flex;
+  }
+  
+  .container_title_shopping_cart {
+    font-size: 32px;
+    line-height: 34px;
+    color: #642c99;
+    margin: 0px 180px 0 0;
+  }
+  
+  .container_button_close {
+    font-family: Lato;
+    font-size: 24px;
+    color: #642c99;
+    padding: 5px;
+  }
+  
+  .container_border_detail_shopping_cart {
+    border: 1px solid #642c99;
+    width: 409px;
+    margin: 34px 0 0 0;
+  }
+  
+  .container_total_cakes_cart {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container_box_cakes_cart_valeu {
+    display: flex;
+  }
+  
+  .container_cake_name {
+    display: flex;
+    margin: 42px 0 0 0;
+    width: 442px;
+  }
+  
+  .container_image_cake_cart {
+    margin: 0 20px 0 0;
+  }
+  
+  .container_text_name_cake {
+    display: flex;
+    align-items: center;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #642c99;
+    margin: 0 80px 0 0;
+  }
+  
+  .container_value_cake {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #642c99;
+    margin: 49px 0 0 0;
+  }
+  
+  .container_total_valeu_total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .container_text_pay {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #642c99;
+  }
+  
+  .container_text_valeu {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #642c99;
+  }
+  
+  .container_button_check_out {
+    width: 411px;
+    height: 59px;
+    background: #642c99;
+    border: none;
+    border-radius: 8px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fbfac9;
+    margin-top: 23px;
+  }
+  
+  .container_button_view_cart {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #642c99;
+    margin-top: 20px;
+  }
+  
+  .container_button_view_cart a {
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }

@@ -8,6 +8,7 @@ body {
 
 a {
   color: #fcefd2;
+  text-decoration: none;
 }
 
 p {
@@ -26,7 +27,7 @@ figure {
   position: fixed;
   width: 100%;
   z-index: 3;
-  background: #fcefd2;
+  background: transparent;
 }
 
 .header ul {
@@ -67,7 +68,6 @@ figure {
   display: inline-block;
   float: left;
   padding: 21px 18px;
-  position: relative;
   user-select: none;
 }
 
@@ -171,6 +171,7 @@ figure {
 .header .logo:before {
   display: none;
 }
+
 
 /*************** CONTAINER TOTAL ****************/
 
@@ -443,7 +444,7 @@ figure {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fcefd2;
+    background-color: transparent;
   }
 
   .container_total {

@@ -1,0 +1,707 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Wendy One";
+  background: #fae0cf;
+  background-image: url("image/bg_check_out_mobile.png");
+}
+
+a {
+  color: #642c99;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/************* HEADER **************/
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background: transparent;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 21px 18px;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  display: block;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 23px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #642c99;
+  margin-top: 1px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  background-color: #642c99;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+  width: 15px;
+  margin-top: 1px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+  width: 30px;
+  height: 4px;
+  margin-top: -1px;
+  border-radius: 10px;
+  background-color: #642c99;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  width: 20px;
+  margin-top: -1px;
+  background-color: #642c99;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  width: 20px;
+  background-color: #642c99;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  width: 34px;
+  height: 35px;
+  margin-top: 15px;
+  margin-right: 24px;
+  background-image: url("image/icon/shopping-car.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.number_list_shopping_car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 11px;
+  font-family: sans-serif;
+  font-size: 10px;
+  text-align: center;
+  background-color: #fcefd2;
+}
+
+.header .logo:before {
+  display: none;
+}
+/*************** CONTAINER DONUTS TABLET ****************/
+
+.container_image_donuts_tablet {
+  display: none;
+}
+
+/*************** CONTAINER TOTAL ****************/
+
+.container_total {
+  max-width: 335px;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+/*********** CONTAINER TITLE *********/
+
+.container_title {
+  font-size: 49px;
+  line-height: 63px;
+  text-align: center;
+  color: #642c99;
+}
+
+.container_text {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 26px;
+  color: #642c99;
+  margin-top: 48px;
+}
+
+/*********** CONTAINER IMAGE DONUTS *********/
+
+.container_image_donuts {
+  width: 178px;
+  height: 241px;
+  margin-left: 177px;
+  background-image: url("image/donuts_mobile.png");
+  background-repeat: no-repeat;
+}
+
+/*********** CONTAINER CAKE SHOPPING *********/
+
+.container_total_cake_shopping {
+  margin: 47px 0 0 0;
+}
+
+.container_image_title {
+  display: flex;
+  align-items: center;
+}
+
+.container_image_cake_shopping {
+}
+
+.container_select_value_shopping {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 30px 0 0 0;
+}
+
+.container_title_cake_shopping {
+  font-size: 26px;
+  line-height: 27px;
+  text-align: center;
+  color: #642c99;
+  margin: 0 0 0 20px;
+}
+
+.container_border_detail {
+  display: block;
+  border: 1px solid #642c99;
+  width: 244px;
+  margin: -10px 0 0 90px;
+}
+
+.container_select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Avenir;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #642c99;
+  border: 1px solid #642c99;
+  width: 100px;
+  height: 43px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 0 0 90px;
+  cursor: pointer;
+}
+
+.container_valeu {
+  font-size: 26px;
+  line-height: 27px;
+  text-align: center;
+  color: #642c99;
+}
+
+.container_border_detail_to_pay {
+  border: 1px solid #642c99;
+  width: 332px;
+  margin: 58px 0 0 0;
+}
+
+/*********** CONTAINER TO PAY *********/
+
+.container_text_valeu_to_pay {
+  display: flex;
+  justify-content: space-between;
+  margin: 52px 0 0 0;
+}
+
+.container_text_to_pay {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #642c99;
+}
+
+.container_valeu_to_pay {
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+  color: #642c99;
+}
+
+.container_button_place_order {
+  width: 334px;
+  height: 59px;
+  background: #642c99;
+  border-radius: 8px;
+  border: none;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fbfac9;
+  margin: 42px 0 0 0;
+}
+
+/****** CONTAINER FOOTER ******/
+
+.container_total_footer {
+}
+
+.container_title_footer {
+  margin: 213px 0 0 0;
+  font-size: 32px;
+  line-height: 34px;
+  color: #fdefd1;
+}
+
+.container-inbox {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fdefd1;
+  margin-top: 59px;
+}
+
+.container_input {
+  width: 335px;
+  height: 43px;
+  border: 2px solid #fdefd1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 24px;
+  margin-top: 29px;
+}
+
+::-webkit-input-placeholder {
+  color: #fdefd1;
+}
+
+.container_input_button {
+  width: 335px;
+  height: 43px;
+  background: #fdefd1;
+  border-radius: 8px;
+  border: none;
+  font-family: Lato;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #642c99;
+  margin-top: 29px;
+  margin-bottom: 70px;
+}
+
+.container_links_from_page a {
+  display: flex;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 39px;
+  color: #fdefd1;
+  text-decoration: none;
+}
+
+.container_links_useful a {
+  display: flex;
+  color: #fdefd1;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 39px;
+  text-decoration: none;
+}
+
+.container-copyright {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 88px;
+  color: #fdefd1;
+}
+
+.container_copyright_1440 {
+  display: none;
+}
+
+/************ CONTAINER ADJUSTE FOOTER ***********/
+
+.container_adjuste_color_footer {
+  height: 850px;
+  margin-top: -800px;
+  background-color: rgb(93 51 148);
+}
+
+/********************************************************/
+
+/********************* MEDIA ONLY 960 *******************/
+
+/********************************************************/
+
+@media only screen and (min-width: 960px) {
+  body {
+    background-image: url("image/bg_check_out_tablet.png");
+  }
+
+  /************* HEADER **************/
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+  }
+
+  .header li a:hover {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+    padding-left: 46px;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  /*************** CONTAINER TOTAL ****************/
+
+  .container_total {
+    max-width: 873px;
+    padding: 0 0 0 0;
+    margin-top: -150px;
+  }
+
+  /*********** CONTAINER IMAGE DONUTS *********/
+
+  .container_image_donuts_tablet {
+    display: block;
+    width: 274px;
+    height: 378px;
+    background-image: url("image/donuts_check_out_tablet.png");
+    background-repeat: no-repeat;
+    margin: 0 0 0 571px;
+  }
+
+  .container_image_donuts {
+    display: none;
+  }
+
+  /*********** CONTAINER TITLE *********/
+
+  .container_title {
+    font-size: 85px;
+    line-height: 105px;
+    text-align: initial;
+  }
+
+  /*********** CONTAINER BORDER DETAIL *********/
+
+  .container_border_detail {
+    display: none;
+  }
+
+  /*********** CONTAINER ADJUSTE *********/
+
+  .container_adjuste {
+    margin: 274px 0 0 0;
+  }
+  /*********** CONTAINER CAKE SHOPPING *********/
+
+  .container_cake_shopping {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*********** CONTAINER SELECT VALUE *********/
+
+  .container_select_value_shopping {
+    align-items: center;
+  }
+
+  /*********** CONTAINER SELECT *********/
+
+  .container_select {
+    margin: 0 102px 0 0;
+    cursor: pointer;
+  }
+
+  /*********** CONTAINER TITLE CAKE SHOPPING *********/
+
+  .container_title_cake_shopping {
+    margin: 0 0 0 60px;
+  }
+
+  /*********** CONTAINER BORDER DETAIL TO PAY *********/
+
+  .container_border_detail_to_pay {
+    width: 100%;
+  }
+
+  /*********** CONTAINER TEXT VALUE TO PAY *********/
+
+  .container_text_valeu_to_pay {
+    margin: 52px 0 0 0;
+  }
+
+  /*********** CONTAINER TEXT TO PAY *********/
+
+  .container_text_to_pay {
+    margin: 0 0 0 548px;
+  }
+
+  /*********** CONTAINER BUTTON PLACE ORDER *********/
+
+  .container_button_place_order {
+    margin: 42px 0 0 539px;
+    cursor: pointer;
+  }
+
+  /*********** CONTAINER FOOTER *********/
+
+  .container_total_footer {
+    margin: 354px 0 0 0;
+  }
+
+  .container_total_title_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-inbox {
+    margin: 197px 60px 0 0;
+  }
+
+  .container_input {
+    width: 394px;
+  }
+
+  .container_input_button {
+    width: 106px;
+    margin-left: 31px;
+  }
+
+  .container_total_links {
+    display: flex;
+  }
+
+  .container_links_from_page {
+    margin-right: 123px;
+  }
+
+  .container-copyright {
+    margin-top: 70px;
+  }
+
+  /*********** CONTAINER ADJUSTE FOOTER *********/
+
+  .container_adjuste_color_footer {
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  /********************************************************/
+
+  /********************* MEDIA ONLY 1440 *******************/
+
+  /********************************************************/
+
+  @media only screen and (min-width: 1440px) {
+    body {
+      background-image: url("image/bg_check_out_desktop.png");
+    }
+
+    /*************** CONTAINER TOTAL ****************/
+
+    .container_total {
+      max-width: 1025px;
+      padding: 0 0 0 0;
+      margin-top: -232px;
+    }
+
+    /*********** CONTAINER IMAGE DONUTS *********/
+
+    .container_image_donuts_tablet {
+      width: 457px;
+      height: 630px;
+      background-image: url("image/donuts_check_out_desktop.png");
+      background-repeat: no-repeat;
+      margin: 0 0 0 900px;
+    }
+
+    /*********** CONTAINER TITLE *********/
+
+    .container_total_title {
+        margin: 0 0 0 -300px;
+    }
+
+    .container_title {
+      font-size: 105px;
+      line-height: 105px;
+      text-align: initial;
+      margin: 0 0 0 -62px;
+    }
+
+    /*********** CONTAINER TEXT *********/
+
+    .container_text {
+      margin: 48px 0 0 -53px;
+    }
+
+    /*********** CONTAINER BUTTON PLACE ORDER *********/
+
+    .container_button_place_order {
+      margin: 42px 0 0 691px;
+      cursor: pointer;
+    }
+
+    /*********** CONTAINER TOTAL FOOTER *********/
+
+    .container_total_footer {
+      margin: 400px 0 0 0;
+    }
+
+    .container-inbox {
+      margin: 197px -46px 0 0;
+    }
+
+    .container_total_links {
+      display: flex;
+    }
+
+    .container_links_useful {
+      display: none;
+    }
+
+    .container_links_from_page {
+      margin: 0px 93px 0 0;
+    }
+
+    .container_total_links {
+      justify-content: center;
+      margin: -200px 230px 0 0;
+    }
+
+    .container-copyright {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 70px 0 0 -15px;
+    }
+
+    .container_copyright_1440 {
+      display: flex;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 48px;
+    }
+
+    .container_copyright_1440 a {
+      color: #fdefd1;
+      margin: 0 60px;
+      text-decoration: none;
+      width: 152px;
+    }
+
+    /*********** CONTAINER ADJUSTE FOOTER *********/
+
+    .container_adjuste_color_footer {
+      height: 100px;
+      margin-top: -10px;
+    }
+  }
+}

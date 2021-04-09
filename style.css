@@ -8,6 +8,7 @@ body {
 
 a {
   color: #642c99;
+  text-decoration: none;
 }
 
 p {
@@ -26,7 +27,7 @@ figure {
   position: fixed;
   width: 100%;
   z-index: 3;
-  background: #f7cfda;
+  background: transparent ;
 }
 
 .header ul {
@@ -34,7 +35,7 @@ figure {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fcefd2;
+  background-color: transparent;
 }
 
 .header li a {
@@ -49,7 +50,7 @@ figure {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: transparent;
 }
 
 /* menu */
@@ -67,7 +68,6 @@ figure {
   display: inline-block;
   float: left;
   padding: 21px 18px;
-  position: relative;
   user-select: none;
 }
 
@@ -171,6 +171,7 @@ figure {
   display: none;
 }
 
+
 /*************** CONTAINER TOTAL ****************/
 
 .container_total {
@@ -197,18 +198,24 @@ figure {
 }
 
 .button-shop-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 46px;
   width: 206px;
   height: 43px;
   background: #642c99;
   border-radius: 8px;
   border: none;
-  font-family: "Lato";
+  font-family: Lato;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   text-transform: uppercase;
-  color: #fbfac9;
+  cursor: pointer;
+}
+
+a.button-shop-now {
+   color: #fbfac9;
 }
 
 .container_image_main_content {
@@ -555,7 +562,7 @@ figure {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #f7cfda;
+    background-color: transparent;
   }
 
   .container_total {
