@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_payment.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div href="" class="logo">
+                <span class="number_list_shopping_car">8</span>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="our_story.html">Nossa História</a></li>
+                <li><a href="why.html">Por que Miss Cupcake</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container_total">
+        <section>
+            <div class="container_title">
+                <p>Finalizando..</p>
+            </div>
+            <div class="container_text">
+                <p>Conclua seu pedido e nós o levaremos até sua porta.</p>
+            </div>
+        </section>
+        <figure class="image_onecake_payment_mobile">
+            <img src="image/image_onecake_payment_mobile.png" alt="" />
+        </figure>
+        <figure class="image_onecake_payment_tablet">
+            <img src="image/image_onecake_payment_tablet.png" alt="" />
+        </figure>
+        <figure class="image_onecake_payment_desktop">
+            <img src="image/image_onecake_payment_desktop.png" alt="" />
+        </figure>
+        <div class="container_text_back_to_my_car">
+            <a href="check_out.html">
+                < Voltar para Meu carrinho</a>
+        </div>
+        <section class="container_delivery_type">
+            <div class="container_title_delivery">
+                <p>Tipo de entrega</p>
+            </div>
+
+            <form action="#">
+                <div class="container_total_package">
+                    <div class="container_package">
+                        <input type="radio" checked id="regular_package" name="delivery" value="regular" />
+                        <label for="regular_package"><span></span> Pacote de Entrega Padrão</label>
+                        <div class="container_text_package">
+                            <p>Conclua seu pedido e nós o levaremos até você</p>
+                        </div>
+                    </div>
+                    <div class="container_value_total">
+                        <p>$0</p>
+                    </div>
+                </div>
+                <div class="container_total_package">
+                    <div class="container_package">
+                        <input type="radio" id="birthday_package" name="delivery" value="birthday" />
+                        <label for="birthday_package">Pacote de Aniversário</label>
+                        <div class="container_text_package">
+                            <p>Pacotes de cupcake de aniversário divertidos com velas e lembrancinhas variadas.</p>
+                        </div>
+                    </div>
+                    <div class="container_value_total">
+                        <p>$9.90</p>
+                    </div>
+                </div>
+                <div class="container_total_package">
+                    <div class="container_package">
+                        <input type="radio" id="valentine_package" name="delivery" value="valentine" />
+                        <label for="valentine_package">Pacote Dia dos Namorados</label>
+
+                        <div class="container_text_package">
+                            <p>O deleite perfeito e delicioso no dia mais romântico do ano com flores e morangos com
+                                cobertura de chocolate.</p>
+                        </div>
+                    </div>
+                    <div class="container_value_total">
+                        <p>$9.90</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="container_border_detail">
+                        <!--border detail-->
+                    </div>
+                    <div class="container_text_value">
+                        <div class="container_text_to_pay">
+                            <p>Total a pagar</p>
+                        </div>
+                        <div class="container_value_to_pay">
+                            <p>$27.92</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container_data_delivery">
+                        <div class="container_titles_forms">
+                            <label>Para ser entregue a:</label>
+                        </div>
+
+                        <div class="container_register_part_one">
+                            <div class="container_texts_forms">
+                                <label>Primeiro nome</label>
+                                <input class="input_delivery" type="text" placeholder="Ex: João">
+                            </div>
+                            <div class="container_texts_forms">
+                                <labe>Último nome</labe>
+                                <input class="input_delivery" type="text" placeholder="Ex: Sousa">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container_register_part_two">
+                            <div class="container_texts_forms">
+                                <label>Endereço de email</label>
+                                <input class="input_delivery" type="email" placeholder="Ex: joaosousa@gmail.com">
+                            </div>
+                            <div class="container_texts_forms">
+                                <label>Senha</label>
+                                <input class="input_delivery" type="password" placeholder="**********">
+                                <div class="container_text_message">
+                                    <p>* Deve ter 10 ou mais caracteres</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_adress">
+                    <div class="container_titles_forms">
+                        <p>Endereço</p>
+                    </div>
+                    <div class="container_adress_part_one">
+                        <div class="container_texts_forms">
+                            <label>Rua</label>
+                            <input class="input_delivery" type="text" placeholder="Ex: Av. Paulista 1812">
+                        </div>
+                        <div class="container_texts_forms">
+                            <label>Cidade</label>
+                            <input class="input_delivery" type="text" placeholder="Ex: São Paulo">
+                        </div>
+                    </div>
+                    <div class="container_adress_part_two">
+                        <div class="container_texts_forms">
+                            <label>Cep</label>
+                            <input class="input_delivery" type="number" placeholder="Ex: 078.98-134">
+                        </div>
+                        <div class="container_texts_forms">
+                            <label>Quem irá receber</label>
+                            <input class="input_delivery" type="text" placeholder="Ex: Maria José">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container_titles_forms">
+                        <p>Contato</p>
+                    </div>
+                    <div class="container_contact">
+                        <div class="container_texts_forms">
+                            <label>Nome do destinatário</label>
+                            <input class="input_delivery" type="text" placeholder="Ex: José Silva">
+                        </div>
+                        <div class="container_texts_forms">
+                            <label>Número do telefone</label>
+                            <input class="input_delivery" type="tel" placeholder="Ex: (11)98799-9800">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container_titles_forms">
+                        <p>Dados de Pagamento</p>
+                    </div>
+                    <div class="container_pay_data_part_one">
+                        <div class="container_texts_forms">
+                            <label>Número do Cartão</label>
+                            <input class="input_delivery" type="number" placeholder="0000000000000">
+                        </div>
+                        <div class="container_texts_forms">
+                            <label>Data de validade</label>
+                            <input class="input_delivery" type="number" placeholder="00 / 0000">
+                        </div>
+                    </div>
+                    <div class="container_pay_data_part_two">
+                        <div class="container_texts_forms">
+                            <label>Titular do cartão</label>
+                            <input class="input_delivery" type="text" placeholder="José Silva">
+                        </div>
+                        <div class="container_texts_forms">
+                            <label>cvv</label>
+                            <input class="input_delivery" type="number" placeholder="000">
+                        </div>
+                    </div>
+                </div>
+                <div class="container_border_detail">
+                    <!--borde detail-->
+                </div>
+                <div class="container_text_value">
+                    <div class="container_text_to_pay">
+                        <p>Total a pagar</p>
+                    </div>
+                    <div class="container_value_to_pay">
+                        <p>$27.92</p>
+                    </div>
+                </div>
+                <div class="container_button">
+                    <button class="container_place_order_button">Faça sua encomenda</button>
+                </div>
+            </form>
+        </section>
+        <footer class="container_total_footer">
+            <div class="container_total_title_footer">
+                <div class="container_title_footer">
+                    <p>Miss </br>cupcake</p>
+                </div>
+                <div class="container-inbox">
+                    <p>Sugestões na sua caixa de entrada</p>
+                    <input class="container_input" type="text" placeholder="Endereço de Email">
+                    <input class="container_input_button" type="button" value="enviar">
+                </div>
+            </div>
+            <div class="container_total_links">
+                <div class="container_links_from_page">
+                    <a href="#">Comprar</a>
+                    <a href="#">Nossa História</a>
+                    <a href="#">Por que Miss cupcake</a>
+                </div>
+                <div class="container_links_useful">
+                    <a href="#">Politica Privicidade</a>
+                    <a href="#">Politica de cookies</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+            </div>
+            <div class="container-copyright">
+                <p> &copy MISS CUPCAKES 2020</p>
+                <div class="container_copyright_1440">
+                    <a href="#">Politica Privicidade</a>
+                    <a href="#">Politica de cookies</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="container_adjuste_color_footer">
+        <!---container adjuste-->
+    </div>
+</body>
+
+</html>

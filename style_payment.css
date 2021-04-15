@@ -1,0 +1,836 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Wendy One";
+  background: #fae0cf;
+  background-image: url("image/bg_payment_mobile.png");
+}
+
+a {
+  color: #642c99;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/************* HEADER **************/
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background: transparent;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 21px 18px;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  display: block;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 23px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #642c99;
+  margin-top: 1px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  background-color: #642c99;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+  width: 15px;
+  margin-top: 1px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+  width: 30px;
+  height: 4px;
+  margin-top: -1px;
+  border-radius: 10px;
+  background-color: #642c99;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  width: 20px;
+  margin-top: -1px;
+  background-color: #642c99;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  width: 20px;
+  background-color: #642c99;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  width: 34px;
+  height: 35px;
+  margin-top: 15px;
+  margin-right: 24px;
+  background-image: url("image/icon/shopping-car.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.number_list_shopping_car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 11px;
+  font-family: sans-serif;
+  font-size: 10px;
+  text-align: center;
+  background-color: #fcefd2;
+}
+
+.header .logo:before {
+  display: none;
+}
+
+/*************** CONTAINER TOTAL ****************/
+
+.container_total {
+  max-width: 335px;
+  margin: 0 auto;
+  padding-top: 128px;
+}
+
+/*********** CONTAINER TITLE *********/
+
+.container_title {
+  font-size: 56px;
+  line-height: 92px;
+  text-align: center;
+  color: #642c99;
+}
+
+.container_text {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 26px;
+  color: #642c99;
+}
+
+/*********** CONTAINER IMAGE ONE CAKE PAYMENT  *********/
+
+.image_onecake_payment_mobile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image_onecake_payment_tablet {
+  display: none;
+}
+
+.image_onecake_payment_desktop {
+  display: none;
+}
+
+.container_text_back_to_my_car {
+  display: none;
+}
+
+/*********** CONTAINER CHECKED FORM *********/
+
+.container_delivery_type {
+}
+
+.container_title_delivery {
+  font-size: 26px;
+  line-height: 27px;
+  color: #642c99;
+}
+
+.container_total_package {
+  display: flex;
+  font-size: 18px;
+  line-height: 70px;
+  color: #642c99;
+}
+
+.container_package {
+  font-size: 18px;
+  line-height: 70px;
+  color: #642c99;
+}
+
+.container_text_package {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  color: #642c99;
+}
+
+.container_value_total {
+  font-size: 18px;
+}
+
+/*********** CONTAINER BORDER DETAIL *********/
+
+.container_border_detail {
+  width: 100%;
+  border: 1px solid #642c99;
+  margin: 45px 0 0 0;
+}
+
+/*********** CONTAINER TEXT VALUE *********/
+
+.container_text_value {
+  display: flex;
+  justify-content: space-between;
+  margin: 46px 0 0 0;
+}
+
+.container_text_to_pay {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 26px;
+  color: #642c99;
+}
+
+.container_value_to_pay {
+  font-size: 26px;
+  line-height: 27px;
+  color: #642c99;
+}
+
+/*********** CONTAINER FORM *********/
+
+.container_register_part_one {
+}
+
+.container_register_part_two {
+}
+
+.container_data_delivery {
+  margin: 85px 0 0 0;
+}
+
+.container_titles_forms {
+  font-size: 26px;
+  line-height: 27px;
+  color: #642c99;
+  margin: 84px 0 63px 0;
+}
+
+.container_texts_forms {
+  font-size: 18px;
+  line-height: 60px;
+  color: #642c99;
+}
+
+.input_delivery {
+  width: 334px;
+  height: 39px;
+  border: 1px solid #642c99;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fcefd2;
+  padding: 0 0 0 23px;
+}
+
+.container_text_message {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  color: #642c99;
+}
+
+/*********** CONTAINER BUTTON PLACE ORDER *********/
+
+.container_place_order_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 59px;
+  background: #642c99;
+  border-radius: 8px;
+  border: none;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fbfac9;
+  cursor: pointer;
+  margin: 79px 0 152px 0;
+}
+
+/****** CONTAINER FOOTER ******/
+
+.container_total_footer {
+}
+
+.container_title_footer {
+  margin: 213px 0 0 0;
+  font-size: 32px;
+  line-height: 34px;
+  color: #fdefd1;
+}
+
+.container-inbox {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fdefd1;
+  margin-top: 59px;
+}
+
+.container_input {
+  width: 335px;
+  height: 43px;
+  border: 2px solid #fdefd1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 24px;
+  margin-top: 29px;
+}
+
+::-webkit-input-placeholder {
+  color: #642c99;
+}
+
+.container_input_button {
+  width: 335px;
+  height: 43px;
+  background: #fdefd1;
+  border-radius: 8px;
+  border: none;
+  font-family: Lato;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #642c99;
+  margin-top: 29px;
+  margin-bottom: 70px;
+}
+
+.container_links_from_page a {
+  display: flex;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 39px;
+  color: #fdefd1;
+  text-decoration: none;
+}
+
+.container_links_useful a {
+  display: flex;
+  color: #fdefd1;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 39px;
+  text-decoration: none;
+}
+
+.container-copyright {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 88px;
+  color: #fdefd1;
+}
+
+.container_copyright_1440 {
+  display: none;
+}
+
+/************ CONTAINER ADJUSTE FOOTER ***********/
+
+.container_adjuste_color_footer {
+  height: 850px;
+  margin-top: -800px;
+  background-color: rgb(93 51 148);
+}
+
+/********************************************************/
+
+/********************* MEDIA ONLY 960 *******************/
+
+/********************************************************/
+
+@media only screen and (min-width: 960px) {
+  body {
+    background-image: url("image/bg_payment_tablet.png");
+  }
+
+  /************* HEADER **************/
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+  }
+
+  .header li a:hover {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+    padding-left: 46px;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  /*************** CONTAINER TOTAL ****************/
+
+  .container_total {
+    max-width: 873px;
+    padding: 233px 0 0 0;
+  }
+
+  /*************** CONTAINER TITLE ****************/
+
+  .container_title {
+    font-size: 100px;
+    line-height: 105px;
+    text-align: initial;
+  }
+
+  /*************** CONTAINER IMAGE CAKE ****************/
+
+  .image_onecake_payment_mobile {
+    display: none;
+  }
+
+  .image_onecake_payment_tablet {
+    display: flex;
+    justify-content: flex-end;
+    margin: -119px 0 0 0;
+  }
+
+  .image_onecake_payment_desktop {
+    display: none;
+  }
+
+  /************* CONTAINER TEXT BACK TO CAR **************/
+
+  .container_text_back_to_my_car {
+    display: block;
+    font-family: Lato;
+    font-size: 18px;
+    margin: 0 0 94px 0;
+    color: #642c99;
+    cursor: pointer;
+  }
+
+  /************** CONTAINER TITLE DELIVERY ***************/
+
+  .container_title_delivery {
+    font-size: 48px;
+    line-height: normal;
+    margin: 0 0 80px 0;
+  }
+
+  /******* CONTAINER TOTAL TEXT TITLE VALEU PACKAGE *******/
+
+  .container_total_package {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /************* CONTAINER TEXT TITLE PACKAGE ************/
+
+  .container_package {
+    font-size: 32px;
+    line-height: 90px;
+  }
+
+  /*************** CONTAINER TEXT PACKAGE ****************/
+
+  .container_text_package {
+    font-size: 18px;
+    margin: 0 0 0 30px;
+  }
+
+  /*********** CONTAINER BORDER DETAIL *********/
+
+  .container_border_detail {
+    margin: 126px 0 0 0;
+  }
+
+  /*************** CONTAINER VALUE PACKAGE ****************/
+  .container_value_total {
+    font-size: 36px;
+  }
+
+  /*************** CONTAINER TEXT VALUE ****************/
+  .container_text_value {
+    justify-content: flex-end;
+  }
+
+  /*************** CONTAINER TEXT TO PAY ****************/
+  .container_text_to_pay {
+    margin: 0 59px 0 0;
+  }
+  /*************** CONTAINER TITLES FORMS ****************/
+  .container_titles_forms {
+    font-size: 47px;
+    line-height: 75px;
+  }
+
+  /*************** CONTAINER TEXTS FORMS ****************/
+
+  .container_texts_forms {
+    font-size: 24px;
+    line-height: 60px;
+    color: #642c99;
+  }
+
+  /*************** INPUT DELIVERY ****************/
+
+  .input_delivery {
+    width: 417px;
+    height: 60px;
+    border: 2px solid #642c99;
+    padding: 0 0 0 23px;
+  }
+
+  /*************** CONTAINER TEXTS FORMS  ****************/
+
+  .container_texts_forms {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /************ CONTAINER TOTAL DATA DELIVERY  *************/
+
+  .container_total_data_delivery {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /*********** CONTAINER DATA DELIVERY TWO PART ************/
+
+  .container_data_delivery_two_part {
+    margin: 0 0 -25px 0;
+  }
+
+  /*********** CONTAINER REGISTER PART ONE TWO ************/
+
+  .container_register_part_one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container_register_part_two {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*********** CONTAINER ADRESS PART ONE TWO ************/
+
+  .container_adress_part_one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container_adress_part_two {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*********** CONTAINER CONTACT PART ONE ************/
+
+  .container_contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*********** CONTAINER PAY DATA PART ONE TWO ************/
+
+  .container_pay_data_part_one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container_pay_data_part_two {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*********** CONTAINER BUTTON ************/
+
+  .container_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /*********** CONTAINER FOOTER *********/
+
+  .container_total_footer {
+    margin: 148px 0 0 0;
+  }
+
+  .container_total_title_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-inbox {
+    margin: 197px 60px 0 0;
+  }
+
+  .container_input {
+    width: 394px;
+  }
+
+  .container_input_button {
+    width: 106px;
+    margin-left: 31px;
+  }
+
+  .container_total_links {
+    display: flex;
+  }
+
+  .container_links_from_page {
+    margin-right: 123px;
+  }
+
+  .container-copyright {
+    margin-top: 70px;
+  }
+
+  /*********** CONTAINER ADJUSTE COLOR FOOTER ************/
+
+  .container_adjuste_color_footer {
+    height: 0;
+    margin-top: -764px;
+  }
+}
+
+/********************************************************/
+
+/********************* MEDIA ONLY 1440 *******************/
+
+/********************************************************/
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url("image/bg_payment_desktop.png");
+  }
+
+  /*************** CONTAINER TOTAL ****************/
+
+  .container_total {
+    max-width: 1100px;
+    padding: 233px 0 0 0;
+  }
+
+  /*************** CONTAINER TITLE ****************/
+
+  .container_title {
+    font-size: 120px;
+    line-height: 127px;
+    margin: 0 0 0 -87px;
+  }
+
+  /*************** CONTAINER TEXT ****************/
+
+  .container_text {
+    margin: 0 0 0 -87px;
+  }
+
+  /*************** CONTAINER IMAGE CAKE ****************/
+
+  .image_onecake_payment_tablet {
+    display: none;
+  }
+
+  .image_onecake_payment_desktop {
+    display: flex;
+    justify-content: flex-end;
+    margin: -212px 0 0 0;
+  }
+
+  /*********** CONTAINER BORDER DETAIL *********/
+
+  .container_border_detail {
+    margin: 126px 0 0 0;
+  }
+
+  /*************** CONTAINER INPUT DELIVERY ****************/
+
+  .input_delivery {
+    width: 449px;
+  }
+
+  /************ CONTAINER REGISTER PART TWO *************/
+
+  .container_register_part_two {
+    margin: 79px 0 0 0;
+  }
+
+  .container_adress_part_two {
+    margin: 79px 0 0 0;
+  }
+
+  .container_pay_data_part_two {
+    margin: 79px 0 0 0;
+  }
+
+  /*********** CONTAINER TOTAL FOOTER *********/
+
+  .container_total_footer {
+    margin: 100px 0 0 0;
+  }
+
+  .container-inbox {
+    margin: 197px -46px 0 0;
+  }
+
+  .container_total_links {
+    display: flex;
+  }
+
+  .container_links_useful {
+    display: none;
+  }
+
+  .container_links_from_page {
+    margin: 0 0 0 0;
+  }
+
+  .container_total_links {
+    justify-content: center;
+    margin: -200px 230px 0 0;
+  }
+
+  .container-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 70px 0 0 -15px;
+  }
+
+  .container_copyright_1440 {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 48px;
+  }
+
+  .container_copyright_1440 a {
+    color: #fdefd1;
+    margin: 0 60px;
+    text-decoration: none;
+    width: 152px;
+  }
+
+  /*********** CONTAINER ADJUSTE FOOTER *********/
+
+  .container_adjuste_color_footer {
+    height: 350px;
+    margin-top: -271px;
+  }
+}

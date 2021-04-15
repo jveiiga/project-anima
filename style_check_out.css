@@ -303,6 +303,9 @@ figure {
 }
 
 .container_button_place_order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 334px;
   height: 59px;
   background: #642c99;
