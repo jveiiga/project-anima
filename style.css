@@ -4,6 +4,7 @@ body {
   font-family: "Wendy One";
   background: #f7cfda;
   background-image: url("image/bg_mobile.png");
+  font-size: 16px;
 }
 
 a {
@@ -140,19 +141,38 @@ figure {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-.header .logo {
-  display: flex;
-  justify-content: flex-end;
+.button-chart-container{
   float: right;
+  position: relative;
+}
+.button-chart{
   width: 34px;
   height: 35px;
   margin-top: 15px;
   margin-right: 24px;
+  background-color: transparent;
+  border: 0;
   background-image: url("image/icon/shopping-car.png");
   background-repeat: no-repeat;
   text-decoration: none;
+  position: relative;
+  cursor: pointer;
 }
+.button-chart span{
+  position: absolute; 
+  top: 0;
+  right: 0;
+}
+.container_shopping_cart{
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+
+/* .header .button-chart:before {
+  display: none;
+} */
+
 
 .number_list_shopping_car {
   display: flex;
@@ -167,9 +187,6 @@ figure {
   background-color: #fcefd2;
 }
 
-.header .logo:before {
-  display: none;
-}
 
 
 /*************** CONTAINER TOTAL ****************/
@@ -182,7 +199,7 @@ figure {
 
 /*********** CONTAINER TITLE *********/
 
-.container_title_main_content {
+.container_title_main_content h1 {
   font-size: 60px;
   color: #642c99;
   line-height: 63px;
@@ -575,7 +592,7 @@ a.button-shop-now {
     display: flex;
   }
 
-  .container_title_main_content {
+  .container_title_main_content h1 {
     font-size: 100px;
     line-height: 105px;
     color: #642c99;
@@ -726,7 +743,7 @@ a.button-shop-now {
     margin: 0 auto;
   }
 
-  .container_title_main_content {
+  .container_title_main_content h1{
     font-size: 120px;
     line-height: 127px;
     width: 600px;

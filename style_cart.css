@@ -4,12 +4,10 @@
 .container_shopping_cart {
     float: right;
     width: 484px;
-    height: 729px;
     background-image: url("image/background_shopping_cart.png");
     background-repeat: no-repeat;
-    margin: 52px 0 0 0;
-    padding: 23px 0 0 0;
-    
+    margin: 0;
+    padding: 23px 0 0;
     transition: 1s;
     z-index: 42;
   }
