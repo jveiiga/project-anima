@@ -1,0 +1,165 @@
+body {
+  max-width: 335px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Wendy One";
+  background-color: #642c99;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fcefd2;
+  border: none;
+  color: #642c99;
+}
+
+/*************** HEADER **************/
+
+header {
+  position: fixed;
+  font-family: Lato;
+  height: 25px;
+  width: 335px;
+  color: #642c99;
+}
+
+.container_closed {
+  float: right;
+  padding: 13px 16px 0 0;
+}
+
+/*************** CONTAINER_TOTAL **************/
+
+.container_total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 0 0 0;
+  background-image: url("image/bg_cart_confirmation_mobile.png");
+  background-repeat: no-repeat;
+}
+
+/*************** CONTAINER TITLE CART **************/
+
+.container_title_cart {
+  width: 247px;
+  font-size: 37px;
+  line-height: 43px;
+  text-align: center;
+  color: #642c99;
+}
+
+/*************** CONTAINER TEXT **************/
+
+.container_text_cart {
+  font-family: Lato;
+  font-size: 11px;
+  line-height: 39px;
+  text-align: center;
+  color: #642c99;
+}
+
+/*************** CONTAINER BUTTON **************/
+
+.container_total_button_cart_confirmation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_button_cart_confirmation {
+  background-color: #642c99;
+  border-radius: 8px;
+  border: none;
+  width: 208px;
+  height: 42px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fbfac9;
+  cursor: pointer;
+}
+
+/*************** CONTAINER IMAGE DESIGN **************/
+
+.container_image_design_cakek_mobile {
+  margin: 78px 0 0 0;
+}
+
+.container_image_design_cakek_tablet {
+  display: none;
+}
+
+/********************************************************/
+
+/********************* MEDIA ONLY 960 *******************/
+
+/********************************************************/
+
+@media only screen and (min-width: 960px) {
+  body {
+    max-width: 545px;
+  }
+
+  /*************** CONTAINER_TOTAL **************/
+
+  .container_total {
+    max-width: 378px;
+    margin: 0 auto;
+    padding: 52px 0 0 0;
+  }
+
+  /*************** HEADER **************/
+
+  header {
+    height: 41px;
+    width: 545px;
+  }
+
+  .container_closed {
+    float: right;
+    padding: 13px 16px 0 0;
+  }
+
+  /*************** CONTAINER TOTAL **************/
+
+  .container_total {
+    max-width: 545px;
+    height: 674px;
+    padding: 85px 0 0 0;
+    background-image: url("image/bg_cart_confirmation_tablet.png");
+  }
+
+  /*************** CONTAINER TITLE CART **************/
+
+  .container_title_cart {
+    width: 403px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  /*************** CONTAINER TEXT CART **************/
+
+  .container_text_cart {
+    font-size: 18px;
+    line-height: 59px;
+  }
+
+  /*************** CONTAINER IMAGE **************/
+
+  .container_image_design_cakek_mobile {
+    display: none;
+  }
+
+  .container_image_design_cakek_tablet {
+    display: block;
+    margin: 119px 0 0 0;
+  }
+}
+
