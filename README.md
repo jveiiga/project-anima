@@ -10,7 +10,7 @@
 <h3 align="center">Foi levado em consideração HTML semântico.<h3/>
 <h3 align="center">Código de própria autoria.<h3/>
 
-<h2 align="center"><a href="https://jveiiga.github.io/project-anima/" alt="MNTN" target="_blank">Clique aqui para ver meu projeto final!<a/><h2/> 
+<h2 align="center"><a target="_blank" href="https://jveiiga.github.io/project-anima/" alt="MNTN">Clique aqui para ver meu projeto final!<a/><h2/> 
   
 ## 🖥  Imagem
 
